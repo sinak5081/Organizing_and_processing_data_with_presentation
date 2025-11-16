@@ -10,6 +10,6 @@ print("min is:",min,"max is :",max)
 item = 20
 x = np.where(grades == item)
 if len (x[0]):
-    print("number item found at:",x[0])
+    print("number", item, "found at:",x[0])
 else:
     print("number is not found")
