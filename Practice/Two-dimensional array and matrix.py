@@ -19,7 +19,7 @@ c = np.matrix([[1,2,3],[4,5,6]])
 print(c)
 d = np.matrix([[7,8],[9,10],[11,12]])
 print(d)
-print("result of matrix m multiplication:")
+print("Result of matrix multiplication:")
 print(c*d)
 #____________________________________
 #Matrix transposition
