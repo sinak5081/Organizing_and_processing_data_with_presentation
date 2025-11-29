@@ -1,0 +1,28 @@
+import numpy as np 
+number1 = int(input("How many numbers do you want to enter for array a?:"))
+array_a=np.zeros((number1),int)
+for i in range(len(array_a)):
+    array_a[i]=int(input("Enter a number: "))
+number2 = int(input("How many numbers do you want to enter for array b?:"))
+array_b = np.zeros((number2),int)
+for i in range(len(array_b)):
+    array_b[i]=int(input("Enter a number: "))
+print("before sorting array a:")
+print(array_a)
+print("Sorted array a:")
+array_a.sort(axis=0,kind="quicksort",order=None)
+print(array_a)
+print("_________________________")
+print("before sorting array b:")
+print(array_b)
+print("Sorted array b")
+array_b.sort(axis=0,kind="quicksort",order=None)
+print(array_b)
+def sum_array(array_a,array_b):
+    array_c = np.hstack((array_a,array_b))
+    print("before sorting array c:")
+    print(array_c)
+    print("sorted array c:")
+    array_c.sort(axis=0,kind = "quicksort",order = None)
+    print(array_c)
+sum_array(array_a,array_b)
